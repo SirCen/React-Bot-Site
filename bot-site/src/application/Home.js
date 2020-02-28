@@ -12,6 +12,9 @@ export default class HomePage extends Component {
           <div className="App-Header">
             <h1>Welcome to the Pub!</h1>
           </div>
+          <div>
+            <p>Hi</p>
+          </div>
         </body>
       </div>
     );
