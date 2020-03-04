@@ -1,18 +1,24 @@
 import React, { Component} from 'react';
-import ScrollButton from 'react-scroll-button';
+import { Link, animateScroll as scroll } from "react-scroll";
 import '../resources/App.css';
 
 export default class Scroll extends Component {
-    constructor(){
-        super();
-    }
+    scrollToTop = () => {
+        scroll.scrollToTop();
+      };
     render() {
         return (
-            <ScrollButton 
-                behavior={'smooth'}
-                buttonBackgroundColor={'transparent'}
-                iconType={'arrow-down'}
-            />
+            <div>
+                <Link
+                    activeClass="active"
+                    to="section1"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                > <div class="border-arrow curvy curvy-inside flat-back"></div>
+                </Link>
+            </div>
         );
     }
 }
