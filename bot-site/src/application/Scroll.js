@@ -3,15 +3,19 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import '../resources/App.css';
 
 export default class Scroll extends Component {
-    scrollToTop = () => {
-        scroll.scrollToTop();
+    constructor(props) {
+        super();
+        this.props = props;
+    }
+    scrollToBottom = () => {
+        scroll.scrollToBottom();
       };
     render() {
         return (
             <div>
                 <Link
                     activeClass="active"
-                    to="section1"
+                    to={this.props.id}
                     spy={true}
                     smooth={true}
                     offset={-70}

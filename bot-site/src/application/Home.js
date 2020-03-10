@@ -13,16 +13,31 @@ export default class HomePage extends Component {
               <h1>Welcome to the Pub!</h1>
             </Row>
             <Row className="App-header-footer">
-              <Scroll />
+              <Scroll 
+                id="section1"
+              />
             </Row>
         </Card>
-        <Card>
-          <Section 
-            title="Invite"
-            subtitle="Bot Invite"
-            dark={true}
-            id="section1"
+        <Card className="Section1" id="section1">
+          <Row> 
+            <Section
+              title="Invite"
+              subtitle="Bot Invite"
+              dark={true}
             />
+          </Row>
+          <Row class="Section1-Footer">
+            <Scroll
+              id="section2"
+            />
+          </Row>
+        </Card>
+        <Card className="App-header" id="section2">
+          <Section
+            title="Commands"
+            subtitle="Commands for bot here"
+            dark={true}
+          />
         </Card>
       </Container>
     );
