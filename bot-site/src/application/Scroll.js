@@ -18,9 +18,9 @@ export default class Scroll extends Component {
                     to={this.props.id}
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={55}
                     duration={500}
-                > <div class="border-arrow curvy curvy-inside flat-back"></div>
+                > <div className="border-arrow curvy curvy-inside flat-back"></div>
                 </Link>
             </div>
         );

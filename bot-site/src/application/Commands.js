@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Section({ title, subtitle, dark}) {
+export default function Commands({ title, subtitle}) {
   return (
-    <div className={"section" + (dark ? " section-dark" : "")}>
+    <div className="">
       <div className="section-content">
         <h1>{title}</h1>
         <p>{subtitle}</p>

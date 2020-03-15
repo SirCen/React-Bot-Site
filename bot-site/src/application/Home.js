@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import {Row, Card, Container} from 'react-bootstrap';
 import '../resources/App.css';
-import Section from './Section.js';
+import Invite from './Invite.js';
 import Scroll from './Scroll.js';
+import Commands from './Commands';
 
 export default class HomePage extends Component {
   render() {
@@ -18,25 +19,24 @@ export default class HomePage extends Component {
               />
             </Row>
         </Card>
-        <Card className="Section1" id="section1">
-          <Row> 
-            <Section
+        <Card className="Section1" >
+          <Row id="section1">
+              <Invite
               title="Invite"
               subtitle="Bot Invite"
-              dark={true}
+              dark={false}
             />
           </Row>
-          <Row class="Section1-Footer">
+          <Row className="Section1-Footer">
             <Scroll
               id="section2"
             />
           </Row>
         </Card>
         <Card className="App-header" id="section2">
-          <Section
+          <Commands
             title="Commands"
             subtitle="Commands for bot here"
-            dark={true}
           />
         </Card>
       </Container>
