@@ -8,7 +8,7 @@ export default class InviteButton extends Component {
         return (
             <div>
             <a href="https://discordapp.com/api/oauth2/authorize?client_id=608365015610949661&permissions=8&scope=bot">
-                <Button variant="secondary">Click here to Invite!</Button>
+                <Button className="inviteBtn">Click here to Invite!</Button>
             </a>
             </div>
         );

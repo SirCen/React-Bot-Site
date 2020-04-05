@@ -28,11 +28,11 @@ export default class HomePage extends Component {
               dark={false}
             />
           </Row>
-          <Row className="Section1-Footer">
+          <Card.Footer className="Section1-Footer">
             <Scroll
               id="section2"
             />
-          </Row>
+          </Card.Footer>
         </Card>
         <Card fluid="true" className="App-header" id="section2">
           <Commands
