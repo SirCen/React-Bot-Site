@@ -4,12 +4,14 @@ import '../resources/App.css';
 import Invite from './Invite.js';
 import Scroll from './Scroll.js';
 import Commands from './Commands';
+import NavBar from './NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class HomePage extends Component {
   render() {
     return (
       <Container fluid="true" className="App">
+        <NavBar />
         <Card fluid="true" className="App-header">
             <Row>
               <h1>Welcome to the Pub!</h1>
