@@ -10,11 +10,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default class HomePage extends Component {
   render() {
     return (
-      <Container fluid="true" className="App">
+      <Container fluid="true" className="App body">
         <NavBar />
-        <Card fluid="true" className="App-header">
+        <Card fluid="true" className="App-header">        
             <Row>
               <h1>Welcome to the Pub!</h1>
+            </Row>
+            <Row>
+              <img src={require('../assets/cswip.jpg')} alt=''></img>
             </Row>
             <Row className="App-header-footer">
               <Scroll 

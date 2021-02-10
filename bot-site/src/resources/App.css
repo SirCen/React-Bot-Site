@@ -178,3 +178,7 @@
   background-image: linear-gradient(to bottom, #7288da, #7288da);
   text-decoration: none;
 }
+
+.body {
+  background-color: #222  !important;
+}

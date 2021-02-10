@@ -1,41 +1,29 @@
 import React from 'react'
-import {Nav, Navbar, Form, FormControl} from 'react-bootstrap'
-import styled from 'styled-components'
-
-const Styles = styled.div`
-    .navbar { background-color: #222 }
-    a, .navbar-nav, .navbar-light .nav-link {
-        color: #9FFFCB;
-        &:hover { color: white; }
-    }
-    .navbar-brand {
-        font-size: 1.4em;
-        color:#9FFFCB;
-        &.hover { color:white; }
-    }
-    .form-center { 
-        position:absolute !important;
-        left: 25%;
-        right: 25%;
-    }
-`;
+import {Nav, Navbar, NavDropdown} from 'react-bootstrap'
+import '../resources/navbar.css'
 
 export default function NavBar() {
         return (
-            <Styles>
-                <NavBar expand="lg">
-                    <Navbar.Brand href="/">Text</Navbar.Brand>
-                    <NavBar.Toggle aria-controls="basic-navbar-nav"/>
-                    <Form className="form-center">
-                        <FormControl type="text" placeholder="Search" className="" />
-                    </Form>
-                    <NavBar.Collapse id="basic-navbar-nav">
-                        <Nav className="ml-auto">
-                            <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-                            <Nav.Item><Nav.Link href="/">About</Nav.Link></Nav.Item>
-                        </Nav>
-                    </NavBar.Collapse>
-                </NavBar>
-            </Styles>
+            <Navbar expand="lg" sticky="top">
+                <Navbar.Brand href="#"><img src={require('../assets/pubbotlogo.svg')} alt=''/>{' '}</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                <Navbar.Collapse id="basic-navbar-nav" className="navbar-collapse">
+                    <Nav className="ml-auto">
+                        <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/">About</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/">Invite</Nav.Link></Nav.Item>
+                        <NavDropdown title="Commands" id="commands-dropdown" className="commands-drop-menu">
+                            <NavDropdown.Item href="/">Admin</NavDropdown.Item>
+                            <NavDropdown.Item href="/">Music</NavDropdown.Item>
+                            <NavDropdown.Item href="/">Translate</NavDropdown.Item>
+                            <NavDropdown.Item href="/">Fun</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="/">All</NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Item><Nav.Link href="/">Support</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/">Donate</Nav.Link></Nav.Item>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
         )
 }

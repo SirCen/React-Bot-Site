@@ -1,0 +1,41 @@
+.navbar { 
+    background-color: gray;
+    height: 80px 
+}
+.navbar-nav, .nav-link {
+    color: black !important;
+    
+}
+.nav-link:hover{ 
+    color: white !important; 
+}
+.navbar-brand {
+    font-size: 1.4em;
+    color:#ebebeb;
+}
+
+.navbar-brand>img {
+    width:100px;
+    height:75px;
+}
+.nav-item {
+    background-color: gray;
+    color: white;
+}
+.navbar-collapse {
+    background-color: gray;
+    top: 0;
+    padding: 20px
+}
+.dropdown-menu {
+    background-color: gray !important;
+    color: white;
+}
+.dropdown-item {
+    background-color: gray;
+    
+}
+.dropdown-item:hover {
+    color:white !important;
+    background-color: gray !important; 
+}
