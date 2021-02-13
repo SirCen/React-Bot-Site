@@ -1,13 +1,13 @@
 .navbar { 
-    background-color: gray;
+    background-color:#34383c !important;
     height: 80px 
 }
 .navbar-nav, .nav-link {
-    color: black !important;
+    color:whitesmoke !important;
     
 }
 .nav-link:hover{ 
-    color: white !important; 
+    color: #006466 !important; 
 }
 .navbar-brand {
     font-size: 1.4em;
@@ -19,23 +19,26 @@
     height:75px;
 }
 .nav-item {
-    background-color: gray;
-    color: white;
+    background-color: #34383c;
+    color: whitesmoke !important;
 }
 .navbar-collapse {
-    background-color: gray;
+    background-color: #34383c;
     top: 0;
     padding: 20px
 }
 .dropdown-menu {
-    background-color: gray !important;
-    color: white;
+    background-color: #34383c !important;
+    color: whitesmoke;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block !important;
 }
 .dropdown-item {
-    background-color: gray;
-    
+    background-color: #34383c;
+    color: whitesmoke !important;
 }
 .dropdown-item:hover {
-    color:white !important;
-    background-color: gray !important; 
+    color:#006466 !important;
+    background-color: #34383c !important; 
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './resources/index.css';
-import HomePage from './application/Home.js';
+import HomePage from './pages/Home.js';
 import * as serviceWorker from './serviceWorker';
 ReactDOM.render(<HomePage />, document.getElementById('root'));
 
