@@ -1,11 +1,12 @@
 import React from 'react'
 import {Nav, Navbar, NavDropdown} from 'react-bootstrap'
 import '../resources/navbar.css'
+import logo from '../assets/PBLogo.png'
 
 export default function NavBar() {
         return (
             <Navbar expand="lg" sticky="top">
-                <Navbar.Brand href="#"><img src={require('../assets/pubbotlogo.svg')} alt=''/>{' '}</Navbar.Brand>
+                <Navbar.Brand href="#"><img src={logo} alt=''/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav" className="navbar-collapse">
                     <Nav className="ml-auto">

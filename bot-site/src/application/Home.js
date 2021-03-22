@@ -6,6 +6,7 @@ import Scroll from './Scroll.js';
 import Commands from './Commands';
 import NavBar from './NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import soontm from '../assets/cswip.jpg';
 
 export default class HomePage extends Component {
   render() {
@@ -17,7 +18,7 @@ export default class HomePage extends Component {
               <h1>Welcome to the Pub!</h1>
             </Row>
             <Row>
-              <img src={require('../assets/cswip.jpg')} alt=''></img>
+              <img src={soontm} alt=''></img>
             </Row>
             <Row className="App-header-footer">
               <Scroll 
