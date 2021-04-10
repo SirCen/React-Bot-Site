@@ -15,25 +15,25 @@ export default function Navbar() {
                   </div>
                   <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                      <a href="/" class="text-gray-300  hover:text-green-300 px-3 py-2 rounded-md text-sm font-medium  font-sans">About</a>
+                      <a href="/" class="text-gray-300  hover:text-green-300 px-3 py-2 rounded-md text-m font-medium font-sans">About</a>
         
-                      <a href="/" class="text-gray-300  hover:text-green-300 px-3 py-2 rounded-md text-sm font-medium font-sans">Invite</a>
+                      <a href="/" class="text-gray-300  hover:text-green-300 px-3 py-2 rounded-md text-m font-medium font-sans">Invite</a>
                       <div>
                         <div>
-                          <button  type="button" id="command-menu" onClick={()=> notDropped(!isDropped)} class="text-gray-300  hover:text-green-300 px-3 py-2 text-sm font-medium font-sans">Commands</button>
+                          <button  type="button" id="command-menu" onClick={()=> notDropped(!isDropped)} class="text-gray-300  hover:text-green-300 px-3 py-2 text-m font-medium font-sans">Commands</button>
                           <div className={
                           (isDropped ? "block " : "hidden ") +
                           "origin-bottom-left text-center absolute z-10 w-40 rounded-md shadow-lg py-1 bg-gray-700 ring-1 ring-black ring-opacity-5 focus:outline-none"} role="menu" aria-orientation="vertical" aria-labelledby="command-menu">
                             <a href="/" class="block px-4 py-2 text-m text-gray-300 hover:text-green-300 font-sans font-medium" role="menuitem">Admin</a>
                             <a href="/" class="block px-4 py-2 text-m text-gray-300 hover:text-green-300 font-sans font-medium" role="menuitem">Fun</a>
-                            <a href="/" class="block px-4 py-2 text-s text-gray-300 hover:text-green-300 font-sans font-medium" role="menuitem">Music</a>
-                            <a href="/" class="block px-4 py-2 text-s text-gray-300 hover:text-green-300 font-sans font-medium" role="menuitem">Translate</a>
+                            <a href="/" class="block px-4 py-2 text-m text-gray-300 hover:text-green-300 font-sans font-medium" role="menuitem">Music</a>
+                            <a href="/" class="block px-4 py-2 text-m text-gray-300 hover:text-green-300 font-sans font-medium" role="menuitem">Translate</a>
                             <div className="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25" />
                               <a href="/" class="block px-4 py-2 text-m text-gray-300 hover:text-green-300 font-sans font-medium" role="menuitem">All</a>
                           </div>
                         </div>
                       </div>
-                      <a href="/" class="text-gray-300  hover:text-green-300 px-3 py-2 rounded-md text-sm font-medium">Support</a>
+                      <a href="/" class="text-gray-300  hover:text-green-300 px-3 py-2 rounded-md text-m font-sans font-medium">Support</a>
                     </div>
                   </div>
                 </div>
