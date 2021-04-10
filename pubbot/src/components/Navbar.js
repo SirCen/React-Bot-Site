@@ -20,7 +20,15 @@ export default function Navbar() {
                       <a href="/" class="text-gray-300  hover:text-green-300 px-3 py-2 rounded-md text-m font-medium font-sans">Invite</a>
                       <div>
                         <div>
-                          <button  type="button" id="command-menu" onClick={()=> notDropped(!isDropped)} class="text-gray-300  hover:text-green-300 px-3 py-2 text-m font-medium font-sans">Commands</button>
+                          <span>
+                            <button  type="button" id="command-menu" onClick={()=> notDropped(!isDropped)} class="text-gray-300 hover:text-green-300 px-5 py-2 text-m font-medium font-sans">
+                              Commands
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                              </svg>
+                            </button>
+                            
+                          </span>
                           <div className={
                           (isDropped ? "block " : "hidden ") +
                           "origin-bottom-left text-center absolute z-10 w-40 rounded-md shadow-lg py-1 bg-gray-700 ring-1 ring-black ring-opacity-5 focus:outline-none"} role="menu" aria-orientation="vertical" aria-labelledby="command-menu">
